@@ -5,17 +5,19 @@
     font-family: 'Poppins', sans-serif;
 }
 
-html{
+/* html,body{
     width: 100%;
-}
+} */
 
-body {
-    background-color: #f2f2f2;
+body,html {
+    /* background-color: #f2f2f2;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    margin: 0 auto;
+    flex-direction: column; */
+    margin: 0 auto; 
+    height: 100%;
+    scroll-behavior: smooth;
 }
 
 /* navbar starts here */
@@ -46,15 +48,17 @@ body {
 }
 
 .srchproduct>input {
-    width: 560px;
+    width: 50vw;
     height: 32.9px;
     margin-top: 8px;
     padding: 5px;
+    font-size: 1.2vw;
 }
 
 .srchproduct>button {
     width: 6%;
-    height: 32px;
+    height: 29px;
+    margin: 2px;
     display: flex;
     /* align-content: center; */
     justify-content: center;
@@ -62,7 +66,7 @@ body {
     background-color: white;
     border: none;
     border-radius: 1px;
-    font-size: 13px;
+    font-size: 1rem;
     margin-left: -33px;
 }
 
@@ -78,8 +82,10 @@ body {
     color: #ffffff;
     flex-direction: row;
     justify-content: space-evenly;
-    font-size: 15px;
+    font-size: 10px;
     margin-top: 15px;
+    float: right;
+   
 }
 
 .navopt li {
@@ -89,7 +95,7 @@ body {
 .navopt li a {
     color: white;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 11px;
     font-weight: 300;
     padding: 9px 10px;
     transition: all 0.3s ease;
@@ -97,6 +103,7 @@ body {
 
 .wallet,.cart{
     margin-right: 10px;
+    
 }
 
 .wallet li a {
@@ -104,6 +111,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column-reverse;
+    width: 5vw;
     /* margin-left: -130px; */
 }
 
@@ -151,11 +159,12 @@ body {
 .menu-icon{
    margin-top: -10px;
    font-size: 25px;
-   margin: 10px;
+   margin-top: 10px;
 }
 
 .menu-icon>a i{
     color: #fff;
+    /* display: none; */
 }
 
 
@@ -273,9 +282,16 @@ nav .wrapper {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    
 }
 
-.alertbox>p {
+.alertbox p a{
+   
+    color: #070707;
+}
+
+/* .alertbox>p {
     margin: 8px;
 }
 
@@ -285,7 +301,7 @@ nav .wrapper {
 
 #alertbox-anchor {
     color: black;
-}
+} */
 
 
 
@@ -322,10 +338,11 @@ nav .wrapper {
     overflow: hidden;
     text-align: center;
     height: 344px;
-    width: 100%;
+    width: 100vw;
     /* margin-left: -32px;
     margin-right: -44px; */
     margin-top: -15px;
+    display: flex;
 }
 
 .slides {
@@ -778,21 +795,22 @@ footer {
     font-size: 13px;
 }
 
-/* @media screen and (max-width:970px){
-    .navbar{
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        max-width: 350px;
-        background: red;
-        display: block;
-        top: 0;
-        left: 0;
-        overflow-y: auto;
-        line-height: 50px;
-
+@media screen and (max-width:900px){
+    .navopt{
+        display: none;
     }
-} */
+
+    .menu-icon{
+        margin-top: -10px;
+        font-size: 25px;
+        margin-top: 10px;
+     }
+     
+     .menu-icon>a i{
+         color: #fff;
+         display: block;
+     }
+}
 
 
 
