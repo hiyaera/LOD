@@ -25,7 +25,7 @@
 
         <div class="srchproduct">
             <input type="text" placeholder="Search for Products, Brands part And More" />
-            <button class="fa-solid fa-magnifying-glass"></button>
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
 
         <div class="navopt">
@@ -48,11 +48,13 @@
 
             <div class="login-signup">
                 <li>
-                    <a href="login-signup">login/signup
+                    <a href="login-signup" onclick="login-signup()">login/signup
                         <i class="fa-solid fa-user"></i>
                     </a>
                 </li>
             </div>
+
+
         </div>
         <div class="menu-icon">
             <a href="#menu"><i class="fa-solid fa-bars"></i></a>
@@ -177,61 +179,91 @@
                 <img src="scrollimg7.jpg" alt="">
             </div>
         </div>
-        </main>
-        <div class="sale-prod">
-            <div class="h2-tag">
-                <h2>ENERGY CLEARANCE SALE</h2>
-            </div>
-            <div class="energy-sale">
-                <div class="cards">
-                    <div class="card">
-                        <img src="energy-sale1.jpg">
-                        <div class="card-desc">
-                            <h3><a href="#">Luminous Eco Charge 18000 150 <br>Ah Tall Tabular Battery</a></h3>
-                            <h4><a href="#">(24M+18M)</a></h4>
-                            <p>18,000</p>
-                        </div>
-                    </div>
+    </main>
+    <div class="form-wrapper">
+        <div class="form-login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <i class="fa-solid fa-lock"></i>
+                    </span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember Me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
 
-                    <div class="card">
-                        <img src="energy-sale2.jpg">
-                        <div class="card-desc">
-                            <h3><a href="#">Luminous Shakti Charge+ 1150</a></h3>
-                            <h4><a href="#">900VA 12V Inverter(24M)</a></h4>
-                            <p>9,150</p>
-                        </div>
-                    </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-resgister">
+                    <p>Don't have an account?</p>
+                    <a href="#" class="register-link">Register</a>
+                </div>
+            </form>
+        </div>
+    </div>
 
-                    <div class="card">
-                        <img src="energy-sale3.jpg">
-                        <div class="card-desc">
-                            <h3><a href="#">Dynex DY-TZ9-B 9Ah Battery</a></h3>
-                            <h4><a href="#">(24M+24M)</a></h4>
-                            <p>2,950</p>
-                        </div>
+    <div class="sale-prod">
+        <h2>ENERGY CLEARANCE SALE</h2>
+        <div class="energy-sale">
+            <div class="cards">
+                <div class="card">
+                    <img src="energy-sale1.jpg">
+                    <div class="card-desc">
+                        <h3><a href="#">Luminous Eco Charge 18000 150 <br>Ah Tall Tabular Battery</a></h3>
+                        <h4><a href="#">(24M+18M)</a></h4>
+                        <p>18,000</p>
                     </div>
+                </div>
 
-                    <div class="card">
-                        <img src="energy-sale4.jpg">
-                        <div class="card-desc">
-                            <h3><a href="#">Dynex DY-TZ5L-B 5Ah Battery</a></h3>
-                            <h4><a href="#">(24M+24M)</a></h4>
-                            <p> 2,340</p>
-                        </div>
+                <div class="card">
+                    <img src="energy-sale2.jpg">
+                    <div class="card-desc">
+                        <h3><a href="#">Luminous Shakti Charge+ 1150</a></h3>
+                        <h4><a href="#">900VA 12V Inverter(24M)</a></h4>
+                        <p>9,150</p>
                     </div>
+                </div>
 
-                    <div class="card">
-                        <img src="energy-sale4.jpg">
-                        <div class="card-desc">
-                            <h3><a href="#">Dynex DY-T7B-B 7Ah Battery</a></h3>
-                            <h4><a href="#">(24M+24M)</a></h4>
-                            <p>2,750</p>
-                        </div>
+                <div class="card">
+                    <img src="energy-sale3.jpg">
+                    <div class="card-desc">
+                        <h3><a href="#">Dynex DY-TZ9-B 9Ah Battery</a></h3>
+                        <h4><a href="#">(24M+24M)</a></h4>
+                        <p>2,950</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="energy-sale4.jpg">
+                    <div class="card-desc">
+                        <h3><a href="#">Dynex DY-TZ5L-B 5Ah Battery</a></h3>
+                        <h4><a href="#">(24M+24M)</a></h4>
+                        <p> 2,340</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="energy-sale4.jpg">
+                    <div class="card-desc">
+                        <h3><a href="#">Dynex DY-T7B-B 7Ah Battery</a></h3>
+                        <h4><a href="#">(24M+24M)</a></h4>
+                        <p>2,750</p>
                     </div>
                 </div>
             </div>
         </div>
-    
+    </div>
+
 
     <!-- <div class="two-img">
         <div class="image1">
@@ -319,14 +351,14 @@
             </div>
 
             <div class="subscribe">
-                <h2>Subscribe To Newsletter</h2>
+                <h2 class="subs-tag">Subscribe To Newsletter</h2>
                 <input type="text" placeholder="Enter Your Email Id Or Mobile Number">
                 <button><a href="#Subscribe">Subscibe To Email/SMS/Call</a></button>
                 <p>Signup to receive latest deals / offers</p>
             </div>
 
             <div class="contact">
-                <h2>Customer Support</h2>
+                <h2 class="cont-tag">Customer Support</h2>
                 <p><i class="fa-solid fa-phone"></i>Phone: +91-9205559711</p>
                 <p><i class="fa-solid fa-phone"></i>Sales: +91-9289235656</p>
                 <p><i class="fa-solid fa-envelope"></i>Email <a id="email" href="#email">support@lockthedeal.com</a></p>
@@ -403,10 +435,11 @@
                 <a href="">Microtek |</a>
                 <a href="">Havells |</a>
                 <a href="">Khaitan </a>
+                <hr>
             </div>
             <div class="top-searches"></div>
         </div>
-        <hr>
+
         <div class="about-us">
             <h2>About Us</h2>
             <p>
