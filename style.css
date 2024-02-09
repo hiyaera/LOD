@@ -30,78 +30,105 @@ html {
     display: none;
 }
 
-.form-wrapper{
-    position: relative;
-    width: 400px;
-    height: 440px;
-    background: transparent;
-    border: 2px solid rgba(255,255,255, .5);
-    border-radius: 20px;
-    backdrop-filter: blur(20px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.form-wrapper .form-login{
-    width: 100%;
-    padding: 40px;
-}
-
-.form-login h2{
-    font-size: 2em;
-    text-align: center;
-}
-
-.input-box{
-    position: relative;
-    width: 100%;
-    height: 50px;
-    margin: 30px;
-    border-bottom: 2px solid #242526;
-}
-
-.input-box label{
+.center{
     position: absolute;
     top: 50%;
-    left: 5px;
-    transform: translateY(-50%);
-    font-size: 1em;
-    font-weight: 500;
-    pointer-events: none;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.input-box input{
-    width: 100%;
-    height: 100%;
-    background: transparent;
+.center button{
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #222;
+    background: #070707;
     border: none;
-    outline: none; 
-    padding: 0 35px 0 5px;   
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-.input-box .icon{
+.popup{
     position: absolute;
-    right: 8px;
-    font-size: 1.2em;
-    line-height: 57px;
-    transition: .5s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    padding: 20px 30px;
+    background: #fff;
+    border-radius: 10px;
 }
 
-.input-box input:focus~label,
-.input-box input:valid~label {
-    top: -5px;
+.popup .close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background: #888;
+    color: #eee;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
 }
 
-.remember-forgot{
-    font-size: .9em;
-    color: #242526;
-    font-weight: 500;
-    margin: -15px 0 15px;
-    display: flex;
-    justify-content: space-between;
+.popup .form h2{
+    text-align: center;
+    color: #222;
+    margin: 10px 0px 20px;
+    font-size: 25px;
 }
 
+.popup.form .form-element{
+    margin: 15px 0px;
+}
+
+.popup .form .form-element label{
+    font-size: 14px;
+    color: #222;
+}
+
+.popup .form .form-element input[type="text"],
+.popup .form .form-element input[type="password"]{
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.popup .form .form-element input[type="checkbox"]{
+    margin-right: 5px;
+}
+
+.popup .form .form-element button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background: #222;
+    color: #e8e5e5;
+    cursor: pointer;
+}
+
+.popup .form .form-element a{
+    display: block;
+    text-align: right;
+    font-size: 15px;
+    color: #1a79ca;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.submitbtn:hover{
+    color: #fff;
+    background-color: #1a79ca;
+}
 
 
 .logo>img {
@@ -215,6 +242,15 @@ html {
 
 .navopt li a:hover {
     color: rgb(196, 190, 190);
+}
+
+form{
+    background: #585757;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* .navopt li:hover .wallet .wallet-link li {
