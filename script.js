@@ -14,7 +14,7 @@ localStorage.setItem("User-password",password)
 }
 
 
-// function login() {
-//     alert("want to login?");
-//   }
+function login() {
+    alert("want to login?");
+  }
 

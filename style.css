@@ -244,14 +244,14 @@ html {
     color: rgb(196, 190, 190);
 }
 
-form{
+/* form{
     background: #585757;
     height: 200px;
     width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 /* .navopt li:hover .wallet .wallet-link li {
     top: 40px;
