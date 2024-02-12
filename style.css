@@ -30,106 +30,6 @@ html {
     display: none;
 }
 
-.center{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.center button{
-    padding: 10px 20px;
-    font-size: 15px;
-    font-weight: 600;
-    color: #222;
-    background: #070707;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.popup{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 380px;
-    padding: 20px 30px;
-    background: #fff;
-    border-radius: 10px;
-}
-
-.popup .close-btn{
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 15px;
-    height: 15px;
-    background: #888;
-    color: #eee;
-    text-align: center;
-    line-height: 15px;
-    border-radius: 15px;
-    cursor: pointer;
-}
-
-.popup .form h2{
-    text-align: center;
-    color: #222;
-    margin: 10px 0px 20px;
-    font-size: 25px;
-}
-
-.popup.form .form-element{
-    margin: 15px 0px;
-}
-
-.popup .form .form-element label{
-    font-size: 14px;
-    color: #222;
-}
-
-.popup .form .form-element input[type="text"],
-.popup .form .form-element input[type="password"]{
-    margin-top: 5px;
-    display: block;
-    width: 100%;
-    padding: 10px;
-    outline: none;
-    border: 1px solid #aaa;
-    border-radius: 5px;
-}
-
-.popup .form .form-element input[type="checkbox"]{
-    margin-right: 5px;
-}
-
-.popup .form .form-element button{
-    width: 100%;
-    height: 40px;
-    border: none;
-    outline: none;
-    font-size: 15px;
-    background: #222;
-    color: #e8e5e5;
-    cursor: pointer;
-}
-
-.popup .form .form-element a{
-    display: block;
-    text-align: right;
-    font-size: 15px;
-    color: #1a79ca;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.submitbtn:hover{
-    color: #fff;
-    background-color: #1a79ca;
-}
-
 
 .logo>img {
     width: 100%;
@@ -244,32 +144,8 @@ html {
     color: rgb(196, 190, 190);
 }
 
-/* form{
-    background: #585757;
-    height: 200px;
-    width: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 
-/* .navopt li:hover .wallet .wallet-link li {
-    top: 40px;
-    opacity: 1;
-    visibility: visible;
-    transition: all 0.3s ease;
-}
 
-.wallet-link li {
-    position: absolute;
-    top: 50px;
-    background: #242526;
-    width: 100%;
-    left: 0;
-    opacity: 0;
-    visibility: hidden;
-
-} */
 
 .menu-icon {
     margin-top: -10px;
@@ -960,7 +836,10 @@ footer {
         display: flex;
         flex-direction: row;
         /* justify-content: space-around; */
-        align-items: flex-start;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
     }
 
     .card {
@@ -968,15 +847,15 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: row-reverse;
+        flex-direction: column;
         align-content: space-around;
         flex-wrap: wrap;
 
     }
 
     .card img {
-        height: 70%;
-        width: 70%;
+        height: 50%;
+        width: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1016,44 +895,71 @@ footer {
     }
 
     .company-info {
+        display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        align-content: flex-start;
+        align-items: flex-start;
     }
 
     .connect-us {
+        display: flex;
         flex-wrap: wrap;
         font-size: 12px;
-    }
-
-    .subscribe {
-        font-size: 12px;
-    }
-
-    .contact {
-        font-size: 12px;
-    }
-
-    .contact .cont-tag {
-        font-size: 12px;
-    }
-
-    .payment {
-        display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        align-content: center;
         align-items: center;
-        padding: 10px;
+        justify-content: center;
+        text-align: center;
     }
 
-    .payment>h2 {
-        font-size: 12px;
+    .social, .subscribe, .contact{
+        margin-bottom: 50px;
     }
 
-    .subscribe h2 {
-        font-size: 13px;
+    .connect-us>.subscribe button a{
+        font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     }
 
-    .product-category {
-        display: none;
+    .connect-us>.subscribe>input {
+        
     }
+}
+
+.subscribe {
+    font-size: 12px;
+}
+
+.contact {
+    font-size: 12px;
+}
+
+.contact .cont-tag {
+    font-size: 12px;
+}
+
+.payment {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+.payment>h2 {
+    font-size: 12px;
+}
+
+.subscribe h2 {
+    font-size: 13px;
+}
+
+.product-category {
+    display: none;
+}
 
 
 }
