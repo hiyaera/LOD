@@ -287,7 +287,7 @@ nav .wrapper {
     line-height: 30px;
 }
 
-.content .row header {
+.content .row header a{
     color: black;
     font-size: 16px;
     font-weight: 500;
