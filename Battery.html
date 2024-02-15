@@ -169,44 +169,57 @@
 
     <!-- product-panel -->
     <div class="product-panel">
-    <ul class="accordion" id="one">
-        <li>
-            <input type="radio" name="accordion" id="first" >
-            <label for="first">PRODUCT CATEGORY</label>
+        <ul class="accordion" id="one">
+            <li>
+                <input type="radio" name="accordion" id="first" checked>
+                <label for="first">PRODUCT CATEGORY</label>
 
-            <div class="content">
-                <p><input type="checkbox"><a href="#">Battery()</a></p>
-            </div>
-        </li>
-    </ul>
-    <ul class="accordion">
-        <li>
-            <input type="radio" name="accordion" id="second">
-            <label for="second">MASTER CATEGORY</label>
+                <div class="content">
+                    <p><input type="checkbox" class="checkbox" name="category" value="battery" onclick="checkbox()"><a
+                            href="#">BATTERY</a>
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <ul class="accordion">
+            <li>
+                <input type="radio" name="accordion" id="second">
+                <label for="second">MASTER CATEGORY</label>
 
-            <div class="content">
-                <p><input type="checkbox"><a href="#">ENERGY()</a></p>
-                <p><input type="checkbox"><a href="#">LIVGUARD()</a></p>
-            </div>
-        </li>
-    </ul>
-    <ul class="accordion">
-        <li>
-            <input type="radio" name="accordion" id="third">
-            <label for="third">TOP PRODUCTS</label>
+                <div class="content">
+                    <p><input type="checkbox" class="checkbox" name="category" value="energy" onclick="checkbox()"><a
+                            href="#">ENERGY</a></p>
+                    <p><input type="checkbox" class="checkbox" name="category" value="livguard" onclick="checkbox()"><a
+                            href="#">LIVGUARD</a></p>
+                </div>
+            </li>
+        </ul>
+        <ul class="accordion">
+            <li>
+                <input type="radio" name="accordion" id="third">
+                <label for="third">TOP PRODUCTS</label>
 
-            <div class="content">
-                <p><input type="checkbox"><a href="#">FOUR WHEELER()</a></p>
-                <p><input type="checkbox"><a href="#">INVERTER BATTERY()</a></p>
-                <p><input type="checkbox"><a href="#">FOUR WHEELER BATTERY()</a></p>
-                <p><input type="checkbox"><a href="#">TWO WHEELER BATTERY()</a></p>
-                <p><input type="checkbox"><a href="#">TWO WHEELER()</a></p>
-                <p><input type="checkbox"><a href="#">UPS BATTERIES()</a></p>
-                <p><input type="checkbox"><a href="#">THREE WHEELER()</a></p>
-            </div>
-        </li>
-    </ul>
-</div>
+                <div class="content">
+                    <p><input type="checkbox" class="checkbox" name="category" value="FOUR WHEELER" onclick="checkbox()"><a
+                            href="#">FOUR WHEELER()</a></p>
+                    <p><input type="checkbox" class="checkbox" name="category" value="INVERTER BATTERY" onclick="checkbox()"><a
+                            href="#">INVERTER BATTERY()</a></p>
+                    <p><input type="checkbox" class="checkbox" name="category" value="FOUR WHEELER BATTERY" onclick="checkbox()"><a
+                            href="#">FOUR WHEELER BATTERY()</a></p>
+                    <p><input type="checkbox" class="checkbox" name="category" value="TWO WHEELER BATTERY" onclick="checkbox()"><a
+                            href="#">TWO WHEELER BATTERY()</a></p>
+                    <p><input type="checkbox" class="checkbox" name="category" value="TWO WHEELER" onclick="checkbox()"><a
+                            href="#">TWO WHEELER()</a></p>
+                    <p><input type="checkbox" class="checkbox" name="category" value="UPS BATTERIES" onclick="checkbox()"><a
+                            href="#">UPS BATTERIES()</a></p>
+                    <p><input type="checkbox" class="checkbox" name="category" value="THREE WHEELER" onclick="checkbox()"><a
+                            href="#">THREE WHEELER()</a></p>
+                </div>
+            </li>
+        </ul>
+    </div>
 
-
+    <script src="Battery.js"></script>
 </body>
+
+</html>
